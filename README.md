@@ -69,3 +69,21 @@
 │   }
 │ }
 ```
+
+## TMT GPS
+
+### 1. Maintenance file image → AccessDenied
+
+`https://storage.googleapis.com/tmt-cockpit-service-gcs/uploads/common_10_2b44ab73df/common_10_2b44ab73df.png`
+
+![Maintenance file](images/tmtgps-maintenance-file.png)
+
+![AccessDenied](images/tmtgps-maintenance-file-access-denied.png)
+
+### 2. Dispatch job checkpoint image → AccessDenied
+
+`https://storage.googleapis.com/tmt-cockpit-service-gcs/uploads/common_9_08a1a63773/common_9_08a1a63773.png`
+
+![Job checkpoint image](images/tmtgps-job-checkpoint-image.png)
+
+![AccessDenied](images/tmtgps-job-checkpoint-image-access-denied.png)
