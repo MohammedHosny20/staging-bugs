@@ -119,6 +119,31 @@
 | }
 ```
 
+### 4. DELETE ujrah/client/orders/1 → 405
+
+`https://staging.cockpit.services.tmtx.io/api/ujrah/client/orders/1`
+
+```text
+405 Method Not Allowed
+Method Not Allowed
+```
+
+### 5. DELETE dispatch-jobs/3 → 403
+
+`https://staging.cockpit.services.tmtx.io/api/dispatch-jobs/3`
+
+```json
+{
+  "data": null,
+  "error": {
+    "status": 403,
+    "name": "ForbiddenError",
+    "message": "Forbidden",
+    "details": {}
+  }
+}
+```
+
 ## All Apps
 
 TMT GPS, Madaan Operator, Rehla Operator, Kold, Nasni, Madaan Workforce
