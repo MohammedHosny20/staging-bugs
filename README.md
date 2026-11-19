@@ -87,3 +87,45 @@
 ![Job checkpoint image](images/tmtgps-job-checkpoint-image.png)
 
 ![AccessDenied](images/tmtgps-job-checkpoint-image-access-denied.png)
+
+### 3. PUT dispatch-jobs/11 → 400
+
+`https://staging.cockpit.services.tmtx.io/api/dispatch-jobs/11`
+
+```json
+{
+  "data": {
+    "id": 11,
+    "name": "Test",
+    "vehicle": 14,
+    "startTimestamp": "2026-11-19T05:55:00.000Z",
+    "dispatchCheckpoints": []
+  }
+}
+```
+
+```text
+[http-response] [PUT] https://staging.cockpit.services.tmtx.io/api/dispatch-jobs/11
+| Status: 400
+| Message:
+| Data: {
+|   "data": null,
+|   "error": {
+|     "status": 400,
+|     "name": "BadRequestError",
+|     "message": "dispatchCheckpoints cannot be set",
+|     "details": {}
+|   }
+| }
+```
+
+## All Apps
+
+TMT GPS, Madaan Operator, Rehla Operator, Kold, Nasni, Madaan Workforce
+
+### 1. File larger than 1 MB → request fails (413)
+
+```text
+413 Request Entity Too Large
+nginx
+```
